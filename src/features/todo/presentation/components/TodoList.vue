@@ -10,10 +10,6 @@
             <TodoItem v-for="todo in todos" :key="todo.id" :todo="todo" @update="updateTodo" @delete="deleteTodo" />
         </transition-group>
     </el-loading>
-
-    <transition-group name="fade" tag="div" class="todo-items">
-        <TodoItem v-for="todo in todos" :key="todo.id" :todo="todo" @update="updateTodo" @delete="deleteTodo" />
-    </transition-group>
 </template>
 
 <script setup lang="ts">
